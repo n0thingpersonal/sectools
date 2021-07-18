@@ -4,9 +4,9 @@
 
 
 [ProjectDiscovery](https://github.com/projectdiscovery) - awesome tools for quick osint
-- [subfinder](##subfinder)
-- [httpx](##httpx)
-- [naabu](##naabu)
+- [subfinder](#subfinder)
+- [httpx](#httpx)
+- [naabu](#naabu)
 
 
 ## subfinder
