@@ -10,6 +10,9 @@
 - [dnsx](#dnsx)
 - [nuclei](#nuclei)
 
+*Domains*
+- [dig](#dig)
+
 
 ## Install and use
 
@@ -67,4 +70,13 @@ nuclei -update-templates
 # usefull commands
 nuclei -u https://example.com
 nuclei -list urls.txt
+```
+
+## dig
+```bash
+# get all dns records for the domain
+dig any domain.com
+
+# get specific type (A, NS, MX, TXT, SOA, etc..)
+dig -t TXT domain.com
 ```
