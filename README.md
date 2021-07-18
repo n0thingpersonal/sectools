@@ -8,6 +8,7 @@
 - [httpx](#httpx)
 - [naabu](#naabu)
 - [dnsx](#dnsx)
+- [nuclei](#nuclei)
 
 
 ## Install and use
@@ -54,4 +55,16 @@ GO111MODULE=on go get -v github.com/projectdiscovery/dnsx/cmd/dnsx
 subfinder -silent -d hackerone.com | dnsx 
 subfinder -silent -d hackerone.com | dnsx -silent -cname -resp
 dnsx -l airbnb-subs.txt -wd airbnb.com -o output.txt
+```
+
+## nuclei
+[nuclei](https://github.com/projectdiscovery/nuclei) - Nuclei is used to send requests across targets based on a template leading to zero false positives and providing fast scanning on large number of hosts.
+```bash
+# install
+GO111MODULE=on go get -v github.com/projectdiscovery/nuclei/v2/cmd/nuclei
+nuclei -update-templates
+
+# usefull commands
+nuclei -u https://example.com
+nuclei -list urls.txt
 ```
