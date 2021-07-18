@@ -9,7 +9,7 @@
 - [naabu](##naabu)
 
 
-##subfinder
+## subfinder
 [subfinder](https://github.com/projectdiscovery/subfinder) - passive subdomain discovery tool that discovers valid subdomains
 ```bash
 # install
@@ -20,7 +20,7 @@ subfinder -d example.com
 subfinder -d example.com -o output.txt
 ```
 
-##httpx
+## httpx
 [httpx](https://github.com/projectdiscovery/httpx) - is a fast and multi-purpose HTTP toolkit allow to run multiple probers
 ```bash
 # install
@@ -31,7 +31,7 @@ httpx -l hosts.txt -silent
 subfinder -d hackerone.com | httpx -title -tech-detect -status-code -follow-redirects
 ```
 
-##naabu
+## naabu
 [naabu](https://github.com/projectdiscovery/naabu)
 ```bash
 # intall
