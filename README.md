@@ -13,6 +13,8 @@
 *Domains*
 - [dig](#dig)
 
+*URLs*
+- [gau](#gau)
 
 ## Install and use
 
@@ -79,4 +81,18 @@ dig any domain.com
 
 # get specific type (A, NS, MX, TXT, SOA, etc..)
 dig -t TXT domain.com
+```
+
+## gau
+[gau](GO111MODULE=on go get -u -v github.com/lc/gau) - getallurls (gau) fetches known URLs from AlienVault's Open Threat Exchange, the Wayback Machine, and Common Crawl for any given domain.
+```bash
+# install
+GO111MODULE=on go get -u -v github.com/lc/gau
+
+# usefull commands
+printf example.com | gau
+cat domains.txt | gau -t 5
+gau example.com
+gau -o example-urls.txt example.com
+gau -b png,jpg,gif example.com
 ```
