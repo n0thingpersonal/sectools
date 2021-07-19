@@ -84,7 +84,7 @@ dig -t TXT domain.com
 ```
 
 ## gau
-[gau app](GO111MODULE=on go get -u -v github.com/lc/gau) - getallurls (gau) fetches known URLs from AlienVault's Open Threat Exchange, the Wayback Machine, and Common Crawl for any given domain.
+[gau](https://github.com/lc/gau) - getallurls (gau) fetches known URLs from AlienVault's Open Threat Exchange, the Wayback Machine, and Common Crawl for any given domain.
 ```bash
 # install
 GO111MODULE=on go get -u -v github.com/lc/gau
